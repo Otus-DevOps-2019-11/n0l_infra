@@ -1,0 +1,5 @@
+{
+  "project_id": "infra-000000",
+  "machine_type": "f1-micro",
+  "source_image_family": "reddit-base"
+}
