@@ -62,7 +62,7 @@ resource "google_compute_firewall" "firewall_puma" {
 
 resource "google_compute_project_metadata" "default" {
   metadata = {
-    ssh-keys = "n0l:${file(var.public_key_path)}appuser1:${file("/Users/oleg-nov/.ssh/appuser1.pub")}appuser2:${file("/Users/oleg-nov/.ssh/appuser2.pub")}"
+    ssh-keys = "n0l:${file(var.public_key_path)}"
   }
 }
 
