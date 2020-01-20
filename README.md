@@ -42,3 +42,17 @@ gcloud compute instances create reddit-app \
 --zone=us-central1-f \
 --preemptible \
 
+## Ex.8
+Задание со *: 
+1. Для добавления нескольких ssh ключей в метаданные всего проекта, их нужно записывать в одну строку без пробелов. (пример ниже)
+2. Если через web поменять конфигурацию, затем выполнить terraform apply, то он затрет измения выполненные через web
+
+resource "google_compute_project_metadata" "default" {
+  metadata = {
+    ssh-keys = "appuser:${file(var.public_key_path)}appuser1:${file("/Users/xxx/.ssh/appuser1.pub")}appuser2:${file("/Users/xxx/.ssh/appuser2.pub")}"
+Задание со **:
+1. Создан и проверен балансировщик нагрузки, описание добавлено в файл lb.tf
+2. Добавлена выходная переменная
+3. Не разобрался с параметром count (будет в следующей лекции)
+
+ 
