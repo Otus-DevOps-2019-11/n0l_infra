@@ -96,5 +96,5 @@ https://medium.com/@Nklya/%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81
  - документация по модулям: https://docs.ansible.com/ansible/latest/modules/list_of_all_modules.html
  - документация по циклам: https://docs.ansible.com/ansible/latest/user_guide/playbooks_loops.html
  - команда для запуска плейбука на хостах входящих в группу db выполняться только задачи с тегом app-tag (--check тестовый прогон плейбука): "ansible-playbook reddit_app.yml --check --tags app-tag  --limit db"
-P.S. Пути в JSON-файлах корректны, билд образов нужно производить из корня репозитория
-P.P.S. Для WSL может понадобиться задать еще пользователя "user": "appuser"
+ - P.S. Пути в JSON-файлах корректны, билд образов нужно производить из корня репозитория
+ - P.P.S. Для WSL может понадобиться задать еще пользователя "user": "appuser"
