@@ -6,3 +6,4 @@ packer/packer
 *.tfvars
 .terraform/
 terraform/terraform
+*.retry
