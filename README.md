@@ -98,3 +98,15 @@ https://medium.com/@Nklya/%D0%B4%D0%B8%D0%BD%D0%B0%D0%BC%D0%B8%D1%87%D0%B5%D1%81
  - команда для запуска плейбука на хостах входящих в группу db выполняться только задачи с тегом app-tag (--check тестовый прогон плейбука): "ansible-playbook reddit_app.yml --check --tags app-tag  --limit db"
  - P.S. Пути в JSON-файлах корректны, билд образов нужно производить из корня репозитория
  - P.P.S. Для WSL может понадобиться задать еще пользователя "user": "appuser"
+
+## Ex.11
+### Ansible Роли, Vault, TravisCI
+
+ - создали роли для  app и db
+ - создали в ansible  два окружкения stage и prod
+ - в group_vars сложили переменные для групп
+ - добавили в проект роль из ansible-galaxy jdauphant.nginx
+ - познакомились с  ansible vault
+
+* добавил в проект динамическое инвентори
+** организовал проверку в travis-ci
