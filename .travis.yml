@@ -9,7 +9,7 @@ notifications:
       secure: mCJf8yF9sg0wttrcOV74/o3k2cMzfhqqSu4GOujhw3GVdOw4wUiki1cB8D01LxGsfDTY4KtThwx3lU1SrG6kZFeLQ073fVrch8r5xYEH7/ztubBxqr9ffyKiFEQvM77klR5Q3n/sQ+ooxJWGOuO+V++TeeSosGHuEfanhF9XOlpE4sbBh+L/fwlmBKTI6paPpt3Yjav913J01lmQWZzNtObKiMNRxFQBadErk8yadlI21vecFMzAyf88awefr6kwtnc9UAcWEkaSW9M6KPFBL+l9bI3XOhSdPnHjXH9P5juuDx6+k6TmR3G5FB0zUSWXsUUZ1mKoHHEPrx1vfbK3Gq7zFU3uWxQAgOqTWolOUKYB/RlzHzq7KxC5cMRGDxuHKnlRX48CPH3WyTohoG2FqzWsakj7q3mo0Zak4YUqBWJ4v94N91Eo/A69ad3X73+EyxPNCCCAl0TyQHVbHmJFyzP3lnEsjCusyOVkIuyRBVIsJ4BIdMM4E5k1i2VeSfUGzJkzEiUrv6Fsbp14qd1n/1ZyRG0tpZ1ZCrYgRFDKcWue6C97vucu9rDjnKjqm14LxbDBYzwg0pidNxAfkyHfKrEcngPVs4KPidPCqqamudNdtq/rJYFFQbMLbTSrPxBsfmqtkH8+sNa+IArc4Ij4R6mgEkTAFhZ7cf7bPoj4//0=
 
 install:
-    source: travis/travis_install_pkg.sh | bash
+- source: travis/travis_install_pkg.sh | bash
 
 script:
 - packer validate -var-file=packer/variables.json.example packer/app.json
