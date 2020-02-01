@@ -1,8 +1,7 @@
 dist: trusty
 sudo: required
 language: bash
-before_install:
-- travis/travis_install_pkg.sh | bash
+#before_install:
 #- curl https://raw.githubusercontent.com/express42/otus-homeworks/2019-11/run.sh | bash
 notifications:
   slack:
@@ -13,6 +12,7 @@ notifications:
 #- travis/travis_install_pkg.sh | bash
 
 script:
+- bash travis/travis_install_pkg.sh
 - packer validate -var-file=packer/variables.json.example packer/app.json
 - packer validate -var-file=packer/variables.json.example packer/db.json
 
