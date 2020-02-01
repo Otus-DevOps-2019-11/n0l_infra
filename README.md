@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.com/Otus-DevOps-2019-11/n0l_infra.svg?branch=master)](https://travis-ci.com/Otus-DevOps-2019-11/n0l_infra)
 # n0l_infra
 n0l Infra repository
 ## Ex.5
