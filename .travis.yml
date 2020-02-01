@@ -24,7 +24,7 @@ script:
 - terraform get
 - terraform init
 - terraform validate
-
+- cd ../../
 - tflint terraform/stage
 - tflint terraform/prod
 
