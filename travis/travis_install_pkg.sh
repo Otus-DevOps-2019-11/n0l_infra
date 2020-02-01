@@ -8,5 +8,10 @@ curl -L -O https://github.com/terraform-linters/tflint/releases/download/v0.13.4
 sudo unzip -o -d /usr/local/bin/ "*.zip"
 rm *.zip
 
-pip install --user --allow-insecure  ansible ansible-lint
+packer --version
+terraform --version
+tflint -v
+
+pip install --upgrade pip
+pip install --user ansible ansible-lint
 
