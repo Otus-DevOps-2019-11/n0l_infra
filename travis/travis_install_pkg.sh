@@ -8,15 +8,12 @@ curl -L -O https://github.com/terraform-linters/tflint/releases/download/v0.13.4
 ls -l
 echo "install pkg"
 sudo unzip -o -d /usr/local/bin/ "*.zip"
-#sudo unzip -o -d /usr/local/bin/ packer_1.5.1_linux_amd64.zip
-#sudo unzip -o -d /usr/local/bin/ terraform_0.12.9_linux_amd64.zip
-#sudo unzip -o -d /usr/local/bin/ tflint_linux_amd64.zip
-echo "remove pkg"
+echo "remove zip"
 rm *.zip
 ls -l
 echo "check pkg"
 
-echo "packer: $(packer --version)"
+packer --version
 terraform --version
 tflint -v
 
